@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QMH4HTymAU9vnat2rqP4QzqYJfWQRnJ21voRUS/wLcFTV2DSQJ6gy41SMxeo7C2RYoBfnx/sCA3DTHqfS27pYQ==",
+  "dgSpecHash": "ylL8xjK9vkK2szCEY6AN+HiXtUoH06r8/UdQNG4AL/4/lJmBINrkL+L1+Jqz0U3KB32Pedz/MZC+Ek2D+Iv9uQ==",
   "success": true,
   "projectFilePath": "C:\\FindMaximumNumber\\FindMaximumNumber\\FindMaximumNumber.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\PCS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\PCS\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\PCS\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

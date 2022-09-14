@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-namespace FindMaximumNumberTest;
+using FindMaximumNumberTest;
 
 namespace FindMaximumNumberTest
 {
@@ -31,6 +31,30 @@ namespace FindMaximumNumberTest
             FindMaximum max = new FindMaximum();
             int num = max.FindMaxIntNumber(1, 2, 3);
             Assert.AreEqual(num, 3);
+        }
+        //TC 2.1
+        [Test]
+        public void GivenMaxFirsFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximum max = new FindMaximum();
+            float num = max.FindMaxFloatNumber(3.1f, 1.2f, 2.4f);
+            Assert.AreEqual(num, 3.1f);
+        }
+        //TC 2.2
+        [Test]
+        public void GivenMaxSecondFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximum max = new FindMaximum();
+            float num = max.FindMaxFloatNumber(1.2f, 3.1f, 2.4f);
+            Assert.AreEqual(num, 3.1f);
+        }
+        //TC 2.3
+        [Test]
+        public void GivenMaxThirdFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximum max = new FindMaximum();
+            float num = max.FindMaxFloatNumber(1.2f, 2.4f, 3.1f);
+            Assert.AreEqual(num, 3.1f);
         }
     }
 }
