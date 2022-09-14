@@ -3,81 +3,79 @@ using FindMaximumNumberTest;
 
 namespace FindMaximumNumberTest
 {
-    //A - Arrange
-    //A - Act
-    //A - Assert
+    // Using Generics
     public class Tests
     {
         //TC 1.1
         [Test]
-        public void GivenMaxFirstNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxFirstPosition_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            int num = max.FindMaxIntNumber(3, 1, 2);
+            FindMaxGenerics<int> max = new FindMaxGenerics<int>(3, 1, 2);
+            int num = max.FindMax();
             Assert.AreEqual(num, 3);
         }
         //TC 1.2
         [Test]
-        public void GivenMaxSecondNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxSecondPosition_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            int num = max.FindMaxIntNumber(1, 3, 2);
+            FindMaxGenerics<int> max = new FindMaxGenerics<int>(1, 3, 2);
+            int num = max.FindMax();
             Assert.AreEqual(num, 3);
         }
         //TC 1.3
         [Test]
-        public void GivenMaxThirdNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxThirdPosition_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            int num = max.FindMaxIntNumber(1, 2, 3);
+            FindMaxGenerics<int> max = new FindMaxGenerics<int>(1, 2, 3);
+            int num = max.FindMax();
             Assert.AreEqual(num, 3);
         }
         //TC 2.1
         [Test]
-        public void GivenMaxFirsFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxFirstPositionFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            float num = max.FindMaxFloatNumber(3.1f, 1.2f, 2.4f);
+            FindMaxGenerics<float> max = new FindMaxGenerics<float>(3.1f, 1.2f, 2.4f);
+            float num = max.FindMax();
             Assert.AreEqual(num, 3.1f);
         }
         //TC 2.2
         [Test]
-        public void GivenMaxSecondFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxSecondPositionFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            float num = max.FindMaxFloatNumber(1.2f, 3.1f, 2.4f);
+            FindMaxGenerics<float> max = new FindMaxGenerics<float>(1.2f, 3.1f, 2.4f);
+            float num = max.FindMax();
             Assert.AreEqual(num, 3.1f);
         }
         //TC 2.3
         [Test]
-        public void GivenMaxThirdFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
+        public void GivenMaxThirdPositionFloatNumber_WhenAnalized_ShouldReturnMaxNumber()
         {
-            FindMaximum max = new FindMaximum();
-            float num = max.FindMaxFloatNumber(1.2f, 2.4f, 3.1f);
+            FindMaxGenerics<float> max = new FindMaxGenerics<float>(1.2f, 2.4f, 3.1f);
+            float num = max.FindMax();
             Assert.AreEqual(num, 3.1f);
         }
         //TC 3.1
         [Test]
-        public void GivenMaxFirsString_WhenAnalized_ShouldReturnMaxString()
+        public void GivenMaxFirstPositionString_WhenAnalized_ShouldReturnMaxString()
         {
-            FindMaximum max = new FindMaximum();
-            string num = max.FindMaxString("Peach", "Banana", "Apple");
+            FindMaxGenerics<string> max = new FindMaxGenerics<string>("Peach", "Banana", "Apple");
+            string num = max.FindMax();
             Assert.AreEqual(num, "Peach");
         }
         //TC 3.2
         [Test]
-        public void GivenMaxSecondString_WhenAnalized_ShouldReturnMaxString()
+        public void GivenMaxSecondPositionString_WhenAnalized_ShouldReturnMaxString()
         {
-            FindMaximum max = new FindMaximum();
-            string num = max.FindMaxString("Banana", "Peach", "Apple");
+            FindMaxGenerics<string> max = new FindMaxGenerics<string>("Banana", "Peach", "Apple");
+            string num = max.FindMax();
             Assert.AreEqual(num, "Peach");
         }
         //TC 3.3
         [Test]
-        public void GivenMaxThirdString_WhenAnalized_ShouldReturnMaxString()
+        public void GivenMaxThirdPositionString_WhenAnalized_ShouldReturnMaxString()
         {
-            FindMaximum max = new FindMaximum();
-            string num = max.FindMaxString("Banana", "Apple", "Peach");
+            FindMaxGenerics<string> max = new FindMaxGenerics<string>("Banana", "Apple", "Peach");
+            string num = max.FindMax();
             Assert.AreEqual(num, "Peach");
         }
     }
